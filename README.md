@@ -1,0 +1,1 @@
+This is a piece of an event calendar interface, which allows to switch between months using the navigation buttons or the left/right arrow keys.
