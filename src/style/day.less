@@ -1,0 +1,29 @@
+.day {
+    .day__header {
+        display: flex;
+        margin: 0;
+        padding: 8px;
+        font-weight: 400;
+        font-size: 14px;
+        .day__descr {
+            display: block;
+            margin-right: 16px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .day-of-week {
+            display: none;
+            @media(min-width: 769px) {
+                display: block;
+            }
+        }
+    }
+    .day__events {
+        display: none;
+        @media(min-width: 769px) {
+            display: block;
+            padding: 8px;
+        }
+    }
+}

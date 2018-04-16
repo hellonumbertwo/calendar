@@ -1,0 +1,105 @@
+.calendar-header {
+    background-color: @block-gray;
+    box-shadow: 0 2px 4px 0 @gray;
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        padding-bottom: 16px;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .item {
+        display: flex;
+        flex-basis: 100%;
+        margin-bottom: 16px;
+        justify-content: flex-end;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @media (min-width: 769px) {
+            flex-basis: auto;
+            margin-bottom: 0;
+            &:first-child {
+                flex-basis: 400px;
+                order: 2;
+            }
+        }
+    }
+}
+
+.calendar-navigation {
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .title {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        padding: 0 8px;
+        text-transform: capitalize;
+        min-width: 150px;
+        text-align: center;
+    }
+    .switcher {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+        flex-basis: 100%;
+        @media(min-width: 520px) {
+            flex-basis: auto;
+            margin-bottom: 0;
+            margin-right: 16px;
+        }
+    }
+    .nav-btn {
+        appearance: none;
+        -webkit-appearance: none;
+        background: none;
+        border: 1px solid @gray;
+        height: 24px;
+        width: 24px;
+        font-size: 10px;
+    }
+    .nav-btn--today {
+        width: auto;
+        font-size: 14px;
+        line-height: 100%;
+        padding: 0 8px;
+        margin: 0 auto;
+        @media(min-width: 520px) {
+            width: auto;
+            font-size: 14px;
+            line-height: 100%;
+            padding: 0 8px;
+            margin: 0 0;
+        }
+    }
+}
+
+.handle-btn {
+    appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    box-shadow: none;
+    background-color: @button-blue;
+    color: #ffffff;
+    padding: 4px 8px;
+    margin-right: 8px;
+    border-radius: 2px;
+    font-size: 14px;
+    box-shadow: 0 2px 2px @shadow-gray;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    &:last-child {
+        margin-right: 0;
+    }
+}
